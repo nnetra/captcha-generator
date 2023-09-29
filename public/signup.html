@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://img.freepik.com/free-photo/purple-pink-watercolor-texture-background_1083-169.jpg?1&w=1060&t=st=1695908593~exp=1695909193~hmac=5b88ddf9c6de879a14677df7ecc99fefc88e9edea69f4496b5e56360e824518b); /* Change 'your-background-image.jpg' to your desired background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 300px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333; /* Dark text color */
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #9370DB; /* Lavender color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #7B68EE; /* Darker lavender on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Signup</h1>
+        <form action="/signupSubmit" method="get">
+            <label for="email">Username</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password">
+            <br>
+            <button type="submit">Sign Up</button><br>
+        </form>
+    </div>
+</body>
+<script src="ser.js"></script>
+</html>
